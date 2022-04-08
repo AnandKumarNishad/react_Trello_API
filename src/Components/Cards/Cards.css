@@ -1,0 +1,70 @@
+*{
+    list-style:none;
+}
+li{
+    width:100%;
+    background-color: #fff;
+    margin:10px 0;
+    border-radius: 5px;
+    padding:5px;
+    box-shadow: 1px 1px 4px grey;
+}
+li .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:5px;
+    border: none;
+}
+li .input textarea{
+    font-size: 1rem;
+    outline: none;
+    width:100%;
+    min-height:25px;
+    font-family: inherit;
+    resize: none;
+    border:none;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+i,button{
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.98);
+}
+
+i{
+    color:grey;
+}
+
+i::before:hover {
+    fill:red;
+}
+
+.card {
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cardTitle {
+    border: none;
+    font-size: 1rem;
+}
+
+.addList {
+    width: 262px;
+    margin: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+    background-color: #3D3F47;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.addList:hover {
+    background-color: #77787b;
+}

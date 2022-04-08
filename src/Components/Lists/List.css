@@ -1,0 +1,103 @@
+.list {
+    min-width:272px;
+    height: fit-content;
+    background-color: #EAEDF0;
+    border-radius: 3px;
+    margin:10px;
+    padding:10px;
+    display:inline-table;
+    box-shadow: 2px 4px 9px #707173;
+}
+
+.list .heading{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.list .heading textarea{
+    width:80%;
+    min-height:15px;
+    font-family: inherit;
+    background-color:inherit;
+    resize: none;
+    border:none;
+    padding-top:10px;
+    padding-left:10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    overflow-y: hidden;
+}
+.list .heading i{
+    color:gray;
+    cursor: pointer;
+}
+#save,#add{
+    border:none;
+    height:30px;
+    font-family: inherit;
+    font-size: 15px;
+    width:50px;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #0079BF;
+}
+
+#save {
+    padding: 5px;
+    height: 25px;
+}
+
+#save:hover {
+    background-color: #1d5b91
+}
+
+#add {
+    padding: 3px;
+    margin-top: 10px;
+}
+
+#add:hover {
+    background-color: #1d5b91
+}
+
+form>textarea{
+    width:100%;
+    min-height:25px;
+    font-family: inherit;
+    resize: none;
+    border:none;
+    margin-bottom:5px;
+    border-radius: 5px;
+    /* border: 2px solid; */
+}
+
+form>textarea:focus {
+    border: 1px solid;
+}
+
+.list>button{
+    width:100%;
+    text-align: left;
+    padding: 5px;
+    color:grey;
+    background-color:inherit;
+    font-size: 17px;
+    font-family: inherit;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px;
+}
+
+.list>button:hover{
+    background-color: #B5BAC9;
+    color: black;
+}
+
+form{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 9px #707173;
+}

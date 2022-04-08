@@ -1,0 +1,115 @@
+.modalContainer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    padding: 30px;
+}
+.modalContent{
+    width: 768px;
+    height:fit-content;
+    background-color: #F4F5F7;
+    padding:10px;
+    border-radius: 5px;
+    padding: 15px;
+}
+.modalContent .modalHeading{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.modalContent .modalHeading textarea{
+    height:30px;
+    width:90%;
+   border:none;
+   background-color: inherit;
+   font-family: inherit;
+   resize: none;
+   padding-left:10px;
+   font-size: 22px;
+   font-weight: 900;
+}
+.modalContainer .modalHeading button{
+    font-size:20px;
+    color:gray;
+    border:none;
+    background-color: inherit;
+    cursor:pointer;
+}
+.modalDescription{
+    margin-bottom: 30px;
+}
+.modalDescription .modalDescriptionContainer{
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin-bottom:15px;
+}
+.modalDescription .modalDescriptionContainer>button{
+    width:60px;
+    border:none;
+    color:black;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 100;
+    border-radius:5px;
+    background-color: #EAECF0;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+.modalDescription textarea{
+    width:100%;
+    resize: none;
+    padding-left:5px;
+    font-family: inherit;
+    font-size:18px;
+    height:50px;
+    border:none;
+    background-color: #EAEDEE;
+    border-radius: 4px;
+}
+.modalDescription .buttons .close{
+    border:none;
+    font-family:inherit;
+    font-size: 25px;
+    color:gray;
+    margin-left:10px;
+}
+.activity{
+    margin-bottom:15px;
+}
+.activity .putComment{
+    background-color: #fff;
+    margin:10px 0;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+.activity .putComment textarea{
+    border:none;
+    resize: none;
+    font-family: 1rem;
+    outline: none;
+    height: 20px;
+}
+
+.modalMainDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalCommentsDiv {
+    width: 502px;
+}
+
+.modalCheckbox {
+    margin: 10px;
+    margin-top: 100px;
+    width: 100px;
+}
