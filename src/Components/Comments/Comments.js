@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { editComment,deleteComment } from "../../AllApiCalls";
-
 import "../Comments/Comments.css";
 
 const Comment = ({ modalComment,modalId,filterComment }) => {
   const [readOnly, setReadOnly] = useState(true);
   const [commentText, setCommentText] = useState(modalComment.text);
-
   const saveComment = async () => {
     try {
         const {data}=await editComment(modalComment.id,commentText);
@@ -15,6 +13,7 @@ const Comment = ({ modalComment,modalId,filterComment }) => {
       console.log(err);
     }
   };
+
 const deleteThisComment=async()=>{
    try{
      const {data}=await deleteComment(modalId,modalComment.id);
@@ -23,7 +22,8 @@ const deleteThisComment=async()=>{
        console.log(err);
    }
 }
-  return (
+  
+return (
     <div className="singleComment">
       <div className="commentData">
         <h5>{modalComment.fullName}</h5>
@@ -38,7 +38,6 @@ const deleteThisComment=async()=>{
               <button id="save" onClick={saveComment}>
                 Save
               </button>
-
               <button id="close" onClick={() => setReadOnly(true)}>
                 x
               </button>

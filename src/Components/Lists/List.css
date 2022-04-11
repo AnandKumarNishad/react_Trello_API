@@ -9,14 +9,15 @@
     box-shadow: 2px 4px 9px #707173;
 }
 
-.list .heading{
+.list .heading {
     display: flex;
     height: 60px;
     justify-content: space-between;
     font-size: 1.3rem;
     padding: 10px;
 }
-.list .heading textarea{
+
+.list .heading textarea {
     width:80%;
     min-height:15px;
     font-family: inherit;
@@ -29,11 +30,13 @@
     font-size: 1.2rem;
     overflow-y: hidden;
 }
-.list .heading i{
-    color:gray;
+
+.list .heading i {
+    color:gray; 
     cursor: pointer;
 }
-#save,#add{
+
+#save,#add {
     border:none;
     height:30px;
     font-family: inherit;
@@ -62,7 +65,7 @@
     background-color: #1d5b91
 }
 
-form>textarea{
+form>textarea {
     width:100%;
     min-height:25px;
     font-family: inherit;
@@ -70,14 +73,13 @@ form>textarea{
     border:none;
     margin-bottom:5px;
     border-radius: 5px;
-    /* border: 2px solid; */
 }
 
 form>textarea:focus {
     border: 1px solid;
 }
 
-.list>button{
+.list>button {
     width:100%;
     text-align: left;
     padding: 5px;
@@ -90,12 +92,12 @@ form>textarea:focus {
     box-shadow: 3px 3px 8px;
 }
 
-.list>button:hover{
+.list>button:hover {
     background-color: #B5BAC9;
     color: black;
 }
 
-form{
+form {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;

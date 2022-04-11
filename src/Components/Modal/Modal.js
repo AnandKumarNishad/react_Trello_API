@@ -10,18 +10,17 @@ const Modal = ({ modal, showModal }) => {
   const [descReadOnly, toggleDescReadOnly] = useState(true);
   const [newComment, setNewComment] = useState("");
   const [readOnly, setReadOnly] = useState(true);
-  const [checkListForm,showCheckListForm]=useState(false);
-  const [checkListTitle,setCheckListTitle]=useState('');
-  
+  const [checkListForm,showCheckListForm] = useState(false);
+  const [checkListTitle,setCheckListTitle] = useState('');
   const { modalName, modalDesc, modalComments, modalId, modalCheckList } = modal;
  
   const handleChange = (e) => {
-
     showModal((prevModal) => ({
       ...prevModal,
       [e.target.name]: e.target.value,
     }));
   };
+
   const saveModalName = async (e) => {
     try {
       showModal({ ...modal, modalName: modalName.replace(/\n/g, "") });
@@ -31,6 +30,7 @@ const Modal = ({ modal, showModal }) => {
       console.log(err);
     }
   };
+  
   const saveModalDesc = async (e) => {
     try {
       showModal({ ...modal, modalDesc: modalDesc.replace(/\n/g, "") });
@@ -40,6 +40,7 @@ const Modal = ({ modal, showModal }) => {
       console.log(err);
     }
   };
+  
   const addNewComment = async (e) => {
     try {
       const { data } = await addComment(modalId, newComment);
@@ -59,14 +60,6 @@ const Modal = ({ modal, showModal }) => {
       console.log(err);
     }
   };
-//   const filterComment = (commentId) => {
-//     showModal({
-//       ...modal,
-//       modalComments: modalComments.filter(
-//         (modalComment) => modalComment.id !== commentId
-//       ),
-//     });
-//   };
 
   const handleSubmit=async (e)=>{
     e.preventDefault();
@@ -202,7 +195,6 @@ const Modal = ({ modal, showModal }) => {
                             modalComment={modalComment}
                             key={index}
                             modalId={modal.modalId}
-                            // filterComment={filterComment}
                         />
                         ))}
                     </div>

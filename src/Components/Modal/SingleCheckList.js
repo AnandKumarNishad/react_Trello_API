@@ -4,6 +4,7 @@ import { addItemToCheckList, deleteACheckList, updateItemOnCheckList, } from "..
 const SingleCheckList = ({ checkList, showModal, modal }) => {
   const [addItem, setAddItem] = useState(false);
   const [newItem, setNewItem] = useState("");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -24,6 +25,7 @@ const SingleCheckList = ({ checkList, showModal, modal }) => {
       console.log(err);
     }
   };
+  
   const handleCheckBox = (checkListItem) => {
     const { id, checkListId } = checkListItem;
     const currCheckList = modal.modalCheckList;
@@ -47,6 +49,7 @@ const SingleCheckList = ({ checkList, showModal, modal }) => {
     }
     showModal({ ...modal, modalCheckList: currCheckList });
   };
+  
   const handleChange = async (e, checkListItem) => {
     try {
       const { data } = await updateItemOnCheckList(
@@ -59,6 +62,7 @@ const SingleCheckList = ({ checkList, showModal, modal }) => {
       console.log(err);
     }
   };
+  
   const handleDelete = async (e) => {
     try {
       const { data } = await deleteACheckList(checkList.checkListId);
@@ -72,6 +76,7 @@ const SingleCheckList = ({ checkList, showModal, modal }) => {
       console.log(err);
     }
   };
+  
   return (
     <div
       className="checkListContainer"

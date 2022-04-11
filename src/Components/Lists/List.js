@@ -2,18 +2,13 @@ import React, { useEffect, useState } from "react";
 import Card from "../Cards/Cards";
 import { fetchCardsOfAList, changeListName, createNewCard } from "../../AllApiCalls";
 import "../Lists/List.css";
-const List = ({
-  listId,
-  listName,
-  handleDeleteList,
-  showModal,
-  cards,
-  setCards
-}) => {
+
+const List = ({ listId, listName, handleDeleteList, showModal, cards, setCards }) => {
   const [editListName, setEditListName] = useState(false);
   const [currListName, setCurrListName] = useState(listName);
   const [showNewCardForm, setShowNewCardForm] = useState(false);
   const [newCardName, setNewCardName] = useState("");
+
   const getCardsOfAList = async () => {
     try {
       const { data } = await fetchCardsOfAList(listId);
@@ -22,11 +17,10 @@ const List = ({
       console.log(err);
     }
   };
+  
   const saveListName = async (e) => {
-    try {
-      
+    try {   
       setEditListName(!editListName);
-      
       setCurrListName(() => {
         let tempListName = "";
         for (let i = 0; i < currListName.length - 1; i++) {
@@ -39,11 +33,10 @@ const List = ({
       console.log(err);
     }
   };
+
   const addNewCard = async (e) => {
     try {
-      e.preventDefault();
-      
-      console.log("hi")
+      e.preventDefault();    
         if (newCardName === "")
         {
             alert("Enter the card title...")
@@ -53,13 +46,14 @@ const List = ({
       setCards((prevState)=>({...prevState,[listId]:[...prevState[listId],data]}));
       setShowNewCardForm(!showNewCardForm);
       setNewCardName("");
-    }catch (err) {
+    } catch (err) {
       console.log(err);
     }
   };
+
   useEffect(() => {
     getCardsOfAList(listId);
-  }, []);
+  },[]);
 
   return (
     <div className="list" id={listId}>
@@ -76,6 +70,7 @@ const List = ({
           onClick={() => handleDeleteList(listId)}
         ></i>
       </div>
+      
       {cards[listId]?.map((card, index) => (
         <Card
           key={card.id}

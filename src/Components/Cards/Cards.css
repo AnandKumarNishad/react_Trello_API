@@ -1,7 +1,8 @@
-*{
+* {
     list-style:none;
 }
-li{
+
+li {
     width:100%;
     background-color: #fff;
     margin:10px 0;
@@ -9,14 +10,16 @@ li{
     padding:5px;
     box-shadow: 1px 1px 4px grey;
 }
-li .input{
+
+li .input {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom:5px;
     border: none;
 }
-li .input textarea{
+
+li .input textarea {
     font-size: 1rem;
     outline: none;
     width:100%;
@@ -27,14 +30,16 @@ li .input textarea{
     overflow-y: hidden;
     cursor: pointer;
 }
-i,button{
+
+i,button {
     cursor: pointer;
 }
-button:active{
+
+button:active {
     transform: scale(0.98);
 }
 
-i{
+i {
     color:grey;
 }
 

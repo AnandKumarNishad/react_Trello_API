@@ -33,6 +33,7 @@ const App = () => {
       console.log(err.message);
     }
   };
+
   const addNewList = async (e) => {
     try {
       e.preventDefault();
@@ -46,9 +47,11 @@ const App = () => {
       console.log(err.message);
     }
   };
+  
   useEffect(() => {
     getLists();
   }, []);
+  
   return (
     <div className="Board">
       {lists?.map((list, index) => (

@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.Board{
+.Board {
   display: flex;
   height: 100vh;
   position: relative;
   overflow-x: visible;
   padding: 20px;
   font-family:Arial, Helvetica, sans-serif
-};
+}
 
 .addNewList button {
   width: 250px;
@@ -22,17 +22,16 @@
   font-family: inherit;
   font-size: 16px;
   color: gray;
-};
+}
 
-.addList{
+.addList {
   width: fit-content;
   height: 30px;
   border: 2px solid blue;
-  /* margin-top: 10px; */
   margin-bottom: 5px;
   font-family: inherit;
   padding-left: 5px;
-};
+}
 
 .listTitle {
   font-size: 2rem;

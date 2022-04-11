@@ -1,4 +1,4 @@
-.modalContainer{
+.modalContainer {
     position: absolute;
     top:0;
     left:0;
@@ -9,7 +9,8 @@
     justify-content: center;
     padding: 30px;
 }
-.modalContent{
+
+.modalContent {
     width: 768px;
     height:fit-content;
     background-color: #F4F5F7;
@@ -17,39 +18,45 @@
     border-radius: 5px;
     padding: 15px;
 }
-.modalContent .modalHeading{
+
+.modalContent .modalHeading {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
 }
-.modalContent .modalHeading textarea{
+
+.modalContent .modalHeading textarea {
     height:30px;
     width:90%;
-   border:none;
-   background-color: inherit;
-   font-family: inherit;
-   resize: none;
-   padding-left:10px;
-   font-size: 22px;
-   font-weight: 900;
+    border:none;
+    background-color: inherit;
+    font-family: inherit;
+    resize: none;
+    padding-left:10px;
+    font-size: 22px;
+    font-weight: 900;
 }
-.modalContainer .modalHeading button{
+
+.modalContainer .modalHeading button {
     font-size:20px;
     color:gray;
     border:none;
     background-color: inherit;
     cursor:pointer;
 }
-.modalDescription{
+
+.modalDescription {
     margin-bottom: 30px;
 }
-.modalDescription .modalDescriptionContainer{
+
+.modalDescription .modalDescriptionContainer {
     width:100%;
     display:flex;
     align-items: center;
     margin-bottom:15px;
 }
-.modalDescription .modalDescriptionContainer>button{
+
+.modalDescription .modalDescriptionContainer>button {
     width:60px;
     border:none;
     color:black;
@@ -61,7 +68,8 @@
     padding-top:5px;
     padding-bottom: 5px;
 }
-.modalDescription textarea{
+
+.modalDescription textarea {
     width:100%;
     resize: none;
     padding-left:5px;
@@ -72,17 +80,20 @@
     background-color: #EAEDEE;
     border-radius: 4px;
 }
-.modalDescription .buttons .close{
+
+.modalDescription .buttons .close {
     border:none;
     font-family:inherit;
     font-size: 25px;
     color:gray;
     margin-left:10px;
 }
-.activity{
+
+.activity {
     margin-bottom:15px;
 }
-.activity .putComment{
+
+.activity .putComment {
     background-color: #fff;
     margin:10px 0;
     display: flex;
@@ -91,7 +102,8 @@
     margin-bottom: 10px;
     border: 1px solid;
 }
-.activity .putComment textarea{
+
+.activity .putComment textarea {
     border:none;
     resize: none;
     font-family: 1rem;
